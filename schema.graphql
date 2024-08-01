@@ -1,0 +1,32 @@
+type HappyRedPacket_ClaimSuccess {
+  id: ID!
+  event_id: String!
+  claimer: String!
+  claimed_value: BigInt!
+  token_address: String!
+  lock: String!
+}
+
+type HappyRedPacket_CreationSuccess {
+  id: ID!
+  total: BigInt!
+  event_id: String!
+  name: String!
+  message: String!
+  creator: String!
+  creation_time: BigInt!
+  token_address: String!
+  number: BigInt!
+  ifrandom: Boolean!
+  duration: BigInt!
+  lock: String!
+}
+
+type HappyRedPacket_RefundSuccess {
+  id: ID!
+  event_id: String!
+  token_address: String!
+  remaining_balance: BigInt!
+  lock: String!
+}
+
