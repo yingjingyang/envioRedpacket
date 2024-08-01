@@ -1,7 +1,7 @@
 name: My Envio Indexer
 networks:
 - id: 10
-  start_block: 0
+  start_block: 115319405
   contracts:
   - name: HappyRedPacket
     address:
