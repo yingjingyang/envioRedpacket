@@ -10,4 +10,5 @@ networks:
     events:
     - event: ClaimSuccess(bytes32 id, address claimer, uint256 claimed_value, address token_address, bytes32 lock)
     - event: CreationSuccess(uint256 total, bytes32 id, string name, string message, address creator, uint256 creation_time, address token_address, uint256 number, bool ifrandom, uint256 duration, bytes32 lock)
+      isAsync: true
     - event: RefundSuccess(bytes32 id, address token_address, uint256 remaining_balance, bytes32 lock)
